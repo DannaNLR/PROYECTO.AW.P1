@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="estilos0.css">
+    <title>Ingreso de datos</title>
+</head>
+<body>
+    <!-- realizar un formulario -->
+    <form id="formulario" onsubmit="return validarFormulario()" action="index.html"> <h4>REGISTRARSE</h4>
+        <label for="username">Nombre de usuario:</label>
+        <input class="controls" type="text" id="username" name="username" required placeholder="Ingrese nombre">
+        <br>
+        <label for="email">Correo electrónico:</label>
+        <input class="controls" type="email" id="email" name="email" required placeholder="Ingrese correo electronico">
+        <br>
+        <label for="tel">Teléfono Móvil</label>
+        <input class="controls" type="tel" id="mobile" placeholder="Ingrese numero de telefono"/>
+        <br>
+        <label for="edad">Edad:</label>
+        <input class="controls" type="number" id="number" placeholder="Ingrese edad"/>
+        <br>
+        <label for="password">Contraseña:</label>
+        <input class="controls" type="password" id="password" name="password" minlength="8" required placeholder="Ingrese contraseña">
+        <br>
+        <div class="registro"><p>¿Ya tienes cuenta?</p><a href="index.html">Iniciar sesion</a></div>
+        <button type="submit" value="Registrarse">Registarse</button>
+    </form>
+    <script src="form.js"></script>
+</body>
+</html>

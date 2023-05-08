@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="estilos.css">
+    <title>Proyecto</title>
+</head>
+<body>
+    <!-- Menu -->
+    <header>
+        <div class="container">
+            <p class="logo">Universidad laica Eloy Alfaro de manabi</p>
+            <nav>
+                <a href="index2.html">Inicio</a>
+                <a href="index2.html#reportes">Reportes</a>
+                <a href="index3.html">Mi cuenta</a>
+                <a href="index.html">Cerrar sesion</a>
+            </nav>
+        </div>
+    </header>
+    <!-- informacion de cuenta -->
+<div class="perfil">
+		<h1>Perfil de usuario</h1>
+		<p>Información personal:</p>
+		<ul>
+			<li><strong>Nombre:</strong> Juan Pérez</li>
+			<li><strong>Edad:</strong> 30 años</li>
+			<li><strong>Correo electrónico:</strong> juanperez@gmail.com</li>
+			<li><strong>Teléfono:</strong> 555-1234</li>
+		</ul>
+		<hr>
+		<p>Información del vehículo:</p>
+		<ul>
+			<li><strong>Marca:</strong> <span id="marca">Toyota</span> 
+                <button onclick="editarmarca()">Editar</button></li>
+			<li><strong>Modelo:</strong> <span id="modelo">Corolla</span> 
+                <button onclick="editarmodelo()">Editar</button></li>
+			<li><strong>Año:</strong> <span id="año">2018</span>
+                <button onclick="editaraño()">Editar</button></li>
+			<li><strong>Color:</strong> <span id="color">rojo</span> 
+                <button onclick="editarcolor()">Editar</button></li>
+		</ul>
+	</div>
+<script src="form.js"></script>
+</body>
+</html>
